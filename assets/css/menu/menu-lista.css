@@ -1,0 +1,54 @@
+.menu__lista {
+    display: block;
+  /* display: block;*/
+   position: absolute;
+   width: 100%;
+   top: 80px;
+   right: 0;
+   background-color: #D9D9D9;
+   height: 0;
+   transition: .6s;
+   z-index: 1000;
+   visibility: hidden;
+   overflow-y: hidden;
+   gap: .5rem;
+}
+.menu__lista a {
+    display: block;
+    padding: .2rem 0;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+}
+
+   @media screen and (min-width: 768px){
+
+      .menu__lista{
+        display: flex;
+        align-items: center;
+        position: static;
+        font-size: 1.125rem;
+        background: none;
+        transition: .0s;
+        visibility: visible;
+        overflow-y: visible;
+       
+      }
+      .menu__lista a{
+        border-bottom: none;
+      }
+  
+
+  }
+  
+  .menu__links.ativo .menu__lista{
+  visibility: visible;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-container.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-logo.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-lista.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-btn.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-links.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-background.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-container.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-titulo.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-nome.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-senha.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/login/login-background-container.css"
+    />
+
+    <title>Senha e Cadastro</title>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu__container">
+        <div class="menu__logo"></div>
+
+        <nav class="menu__links">
+          <button class="menu__btn">
+            <span class="menu__btn__linhas"></span>
+          </button>
+          <ul class="menu__lista">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Nossos clientes</a></li>
+            <li><a href="#">Atendimento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="login">
+        <div class="login__titulo">
+          <h1 class="login__titulo--palavra">Cadastro</h1>
+        </div>
+
+        <div class="login__background">
+          <div class="login__background__container">
+            <div class="login__nome">
+              <label for="usuario">Usuário</label>
+              <input class="login__entrada" type="text" name="usuario" />
+            </div>
+
+            <div class="login__senha">
+              <label for="Senha">Senha</label>
+              <input type="text" name="senha" />
+            </div>
+
+            <div class="ligin__lembre">
+              <input type="checkbox" name="lembre" />Lembre-me
+            </div>
+
+            <div class="login__btn">
+              <button>ENTRAR</button>
+            </div>
+
+            <div class="login__perdi__senha"></div>
+            <a href="#">Esqueci minha senha</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/assets/js/principal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.menu__btn{
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+  }
+  
+  @media screen and (min-width: 768px){
+    .menu__btn{
+        display: none;
+    }
+  
+  }
+  
+  .menu__btn__linhas {
+    width: 20px;
+    border-top: 2px solid;
+    
+  }
+  .menu__btn__linhas::after, .menu__btn__linhas::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+  }
+  
+  /*faz referencia a menu__links, assim faz as linhas do menu, fazerem um X*/
+  .menu__links.ativo .menu__btn__linhas{
+        border-top-color: transparent;
+    }
+
+ .menu__links.ativo .menu__btn__linhas::before{
+        transform: rotate(135deg);
+    }
+
+  .menu__links.ativo .menu__btn__linhas::after{
+        border-top-color: transparent;
+        transform: rotate(-135deg);
+        top: -7px;
+    }

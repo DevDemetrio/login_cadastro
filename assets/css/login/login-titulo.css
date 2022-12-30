@@ -1,0 +1,8 @@
+.login__titulo {
+    margin: 4rem 0 1.5rem 0;
+}
+.login__titulo--palavra{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

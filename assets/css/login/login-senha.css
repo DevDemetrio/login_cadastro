@@ -1,0 +1,4 @@
+.login__senha {
+  display: flex;
+  flex-direction: column;
+}

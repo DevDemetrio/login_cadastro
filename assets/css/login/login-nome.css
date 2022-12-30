@@ -1,0 +1,4 @@
+.login__nome {
+  display: flex;
+  flex-direction: column;
+}
