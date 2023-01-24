@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/menu/menu.css" />
@@ -17,11 +20,16 @@
     <link rel="stylesheet" href="/assets/css/login/login-titulo.css" />
     <link rel="stylesheet" href="/assets/css/login/login-nome.css" />
     <link rel="stylesheet" href="/assets/css/login/login-senha.css" />
+    <link rel="stylesheet" href="/assets/css/login/login-usuario-senha.css" />
     <link
       rel="stylesheet"
       href="/assets/css/login/login-background-container.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="/assets/css/login/login-perdi-senha-link.css"
+    />
+    <link rel="stylesheet" href="/assets/css/rodape/rodape.css" />
     <title>Senha e Cadastro</title>
   </head>
   <body>
@@ -45,35 +53,61 @@
     <main>
       <section class="login">
         <div class="login__titulo">
-          <h1 class="login__titulo--palavra">Cadastro</h1>
+          <h2 class="login__titulo--palavra">Login</h2>
         </div>
 
-        <div class="login__background">
+        <form  action="#" method="post" class="login__background">
           <div class="login__background__container">
             <div class="login__nome">
-              <label for="usuario">Usuário</label>
-              <input class="login__entrada" type="text" name="usuario" />
+              <label class="login__campo__nome" for="usuario">Usuário</label>
+              <input class="login__entrada__nome" type="text" name="usuario" />
             </div>
 
             <div class="login__senha">
-              <label for="Senha">Senha</label>
-              <input type="text" name="senha" />
+              <label class="login__campo__senha" for="Senha">Senha</label>
+              <input class="login__entrada__senha" type="password" name="senha" />
             </div>
 
-            <div class="ligin__lembre">
-              <input type="checkbox" name="lembre" />Lembre-me
+            <div class="login__lembre">
+              <input
+                class="login__lembre"
+                type="checkbox"
+                name="lembre"
+              />Lembre-me
             </div>
 
             <div class="login__btn">
-              <button>ENTRAR</button>
+              <button class="botao__entrada">ENTRAR</button>
             </div>
 
-            <div class="login__perdi__senha"></div>
-            <a href="#">Esqueci minha senha</a>
+            <div class="login__perdi__senha">
+              <a class="login__perdi__senha__link" href="#"
+                >Esqueci minha senha</a
+              >
+            </div>
           </div>
-        </div>
+        </form>
+
+
+
       </section>
     </main>
+    <footer class="rodaPe">
+      <div class="rodaPe__container">
+      <div class="rodaPe__direitoAutorais">
+        <div class="rodaPe__icones__item">
+
+        </div class="rodaPe__dono__pagina">
+        <p> Dono da pagina</p>
+      </div>
+      <div class="rodaPe__icones">
+        <div class="rodaPe__icones__item"></div>
+        <div class="rodaPe__icones__item"></div>
+        <div class="rodaPe__icones__item"></div>
+        <div class="rodaPe__icones__item"></div>
+      </div>
+    </div>
+    </footer>
     <script src="/assets/js/principal.js"></script>
   </body>
 </html>

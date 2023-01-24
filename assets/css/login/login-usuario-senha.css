@@ -1,0 +1,25 @@
+.login__entrada__nome {
+  margin-top: 0.5rem;
+}
+
+.login__senha {
+  margin-top: 1.125rem;
+}
+
+.login__entrada__senha {
+  margin-top: 0.5rem;
+}
+
+.login__lembre {
+  margin-top: 0.5rem;
+}
+.login__btn {
+  margin-top: 2rem;
+}
+.botao__entrada {
+  display: block;
+  margin: 0 auto 0 auto;
+  height: 1.8rem;
+  width: 12.25rem;
+  border-radius: 20px;
+}

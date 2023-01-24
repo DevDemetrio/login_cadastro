@@ -1,0 +1,10 @@
+.login__perdi__senha {
+  width: auto;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+.login__perdi__senha__link {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: black;
+}
