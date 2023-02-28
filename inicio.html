@@ -4,56 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
     />
     <link rel="stylesheet" href="/assets/css/inicio/carrossel.css" />
+    <link rel="stylesheet" href="/assets/css/inicio/titulo.css" />
+    <link rel="stylesheet" href="/assets/css/inicio/trabalhos.css" />
     <title>Início</title>
   </head>
   <body>
-    <div>
-      <div class="slider">
-        <div class="slides">
-          <!--Radio BUttons-->
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <!--Fim radio byuttons-->
+    <section class="slider">
+      <h1>Título</h1>
+      <div class="slides">
+        <!--Radio BUttons-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!--Fim radio byuttons-->
 
-          <!--Slide images-->
-          <div class="slide first">
-            <img src="/assets/img/imagem1.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/assets/img/imagem2.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/assets/img/imagem3.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="/assets/img/imagem4.png" alt="" />
-          </div>
-          <!--fim Slide images-->
-
-          <!--Navigation auto-->
-          <div class="navegation__auto">
-            <div class="auto__btn1"></div>
-            <div class="auto__btn2"></div>
-            <div class="auto__btn3"></div>
-            <div class="auto__btn4"></div>
-          </div>
+        <!--Slide images-->
+        <div class="slide first">
+          <div class="item__slide"><h2>1</h2></div>
         </div>
+        <div class="slide">
+          <div class="item__slide"><h2>2</h2></div>
+        </div>
+        <div class="slide">
+          <div class="item__slide"><h2>3</h2></div>
+        </div>
+        <div class="slide">
+          <div class="item__slide"><h2>4</h2></div>
+        </div>
+        <!--fim Slide images-->
 
-        <div class="manual__navigation">
-          <label for="radio1" class="manual__btn"></label>
-          <label for="radio2" class="manual__btn"></label>
-          <label for="radio3" class="manual__btn"></label>
-          <label for="radio4" class="manual__btn"></label>
+        <!--Navigation auto-->
+        <div class="navegation__auto">
+          <div class="auto__btn1"></div>
+          <div class="auto__btn2"></div>
+          <div class="auto__btn3"></div>
+          <div class="auto__btn4"></div>
         </div>
       </div>
-    </div>
+
+      <div class="manual__navigation">
+        <label for="radio1" class="manual__btn"></label>
+        <label for="radio2" class="manual__btn"></label>
+        <label for="radio3" class="manual__btn"></label>
+        <label for="radio4" class="manual__btn"></label>
+      </div>
+    </section>
+
+    <article class="trabalhos">
+      <h2 class="trabalhos__titulo">Nosso trabalhos</h2>
+      <section>
+        <div class="trabalhos__primeiraFoto">
+          <div class="item__foto"></div>
+          <h3>foto1</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        </div>
+      </section>
+    </article>
     <script src="/assets/js/carrossel.js"></script>
   </body>
 </html>

@@ -20,9 +20,14 @@ botao.addEventListener("click", function (event) {
 
   var deuCerto = validaSenha(nomeUser, senhaUser);
   if (deuCerto == true) {
-    console.log("meus filhos são vitoriosos");
+    location.href = "inicio.html";
   } else {
-    console.log("nao deu certo");
+    var campoNomeErro = document.querySelector(".login__entrada__nome");
+    var CampoSenhaErro = document.querySelector(".login__entrada__senha");
+    var mensagemErro = document.querySelector(".mensagem__erro");
+    campoNomeErro.classList.add("login__erro");
+    CampoSenhaErro.classList.add("login__erro");
+    mensagemErro.textContent = "Usuário ou Senha estão errados";
   }
 });
 
@@ -32,20 +37,5 @@ function validaSenha(nomes, senhas) {
 
   if (nomeCerto == nomes && senhaCerta == senhas) {
     return true;
-  } else {
-    return false;
-  }
-}
-
-function menErro(erros) {
-  var erro = [];
-
-  if (erros == 1) {
-    erro.push("Nome de usuário errado");
-    return erro;
-  }
-  if (erros == 2) {
-    erro.push("senha errada");
-    return erro;
   }
 }

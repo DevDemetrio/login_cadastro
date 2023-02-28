@@ -1,10 +1,17 @@
 .slider {
   margin: 0 auto;
-  width: 550px;
-  height: 367px;
+  width: 265px;
+  height: 275px;
   overflow: hidden;
 }
-
+.item__slide {
+  width: 265px;
+  height: 158px;
+  background-color: #d9d9d9;
+}
+.item__slide h2 {
+  text-align: center;
+}
 .slides {
   width: 400%;
   height: 400px;
@@ -20,10 +27,15 @@
   position: relative;
   transition: 2s;
 }
+/*
+.slide img {
+  width: 550px;
+}
+*/
 .manual__navigation {
   position: absolute;
-  width: 550px;
-  margin-top: -70px;
+  width: 265px;
+  margin-top: -250px;
   display: flex;
   justify-content: center;
 }
@@ -35,8 +47,9 @@
   cursor: pointer;
   transition: 1s;
 }
+/*aplica espaço, mas! menos no ultimo item*/
 .manual__btn:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .manual__btn:hover {
   background-color: #fff;
@@ -56,22 +69,21 @@
 }
 
 .navegation__auto div {
-  border: 2px solid #20a6ff;
+  border: 2px solid #d9d9d9;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
-
 .navegation__auto {
   position: absolute;
-  width: 800px;
-  margin-top: 360px;
+  width: 265px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
 }
 .navegation__auto div:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 #radio1:checked ~ .navegation__auto .auto__btn1 {
   background-color: #fff;

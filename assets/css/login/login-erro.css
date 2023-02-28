@@ -1,0 +1,10 @@
+.login__erro {
+  border: 2px solid red;
+}
+.mensagem__erro {
+  display: block;
+  margin: 10px 0 10px 3px;
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}

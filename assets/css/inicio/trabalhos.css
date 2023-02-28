@@ -1,0 +1,19 @@
+.trabalhos {
+  width: 265px;
+  margin: 40px auto 0 auto;
+}
+.trabalhos > h2 {
+  text-align: center;
+  font-size: 17px;
+}
+.trabalhos__titulo {
+  margin: 0 auto;
+}
+.item__foto {
+  width: 265px;
+  height: 158px;
+  background-color: blue;
+}
+.trabalhos__primeiraFoto {
+  font-size: 13px;
+}
