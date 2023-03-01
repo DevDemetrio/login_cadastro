@@ -1,8 +1,13 @@
 .slider {
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   width: 265px;
   height: 275px;
   overflow: hidden;
+}
+.slider h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .item__slide {
   width: 265px;
@@ -35,7 +40,7 @@
 .manual__navigation {
   position: absolute;
   width: 265px;
-  margin-top: -250px;
+  margin-top: -270px;
   display: flex;
   justify-content: center;
 }
@@ -78,7 +83,7 @@
 .navegation__auto {
   position: absolute;
   width: 265px;
-  margin-top: 150px;
+  margin-top: 130px;
   display: flex;
   justify-content: center;
 }

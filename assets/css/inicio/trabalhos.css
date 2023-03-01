@@ -1,10 +1,12 @@
 .trabalhos {
   width: 265px;
-  margin: 40px auto 0 auto;
+  margin: 1rem auto 0 auto;
 }
 .trabalhos > h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
-  font-size: 17px;
 }
 .trabalhos__titulo {
   margin: 0 auto;
@@ -12,8 +14,14 @@
 .item__foto {
   width: 265px;
   height: 158px;
-  background-color: blue;
+  background-color: #d9d9d9;
 }
-.trabalhos__primeiraFoto {
-  font-size: 13px;
+.trabalhos__primeiraFoto > h3 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.trabalhos__primeiraFoto > p {
+  width: 11rem;
+  font-size: 0.75rem;
 }

@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/formulario/formulario-container.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/formulario/formulario-container.css"
+    />
+    <link rel="stylesheet" href="/assets/css/menu/menu.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-container.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-logo.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-lista.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-btn.css" />
+    <link rel="stylesheet" href="/assets/css/menu/menu-links.css" />
+    <link rel="stylesheet" href="/assets/css/rodape/rodape.css" />
+    <title>Início</title>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu__container">
+        <div class="menu__logo"></div>
+
+        <nav class="menu__links">
+          <button class="menu__btn">
+            <span class="menu__btn__linhas"></span>
+          </button>
+          <ul class="menu__lista">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Nossos clientes</a></li>
+            <li><a href="#">Atendimento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section class="cadastro">
-        <h1>Cadastro</h1>
-        <div class="cadastro__container">
-            <form action="">
-                <label for=""></label>
-                <input type="text">
-            </form>
-        </div>
+      <h1>Cadastro</h1>
+      <div class="cadastro__container">
+        <form action="">
+          <label for=""></label>
+          <input type="text" />
+        </form>
+      </div>
     </section>
-    
-</body>
+    <footer class="rodaPe">
+        <div class="rodaPe__container">
+        <div class="rodaPe__direitoAutorais">
+          <div class="rodaPe__icones__item">
+  
+          </div class="rodaPe__dono__pagina">
+          <p> Dono da pagina</p>
+        </div>
+        <div class="rodaPe__icones">
+          <div class="rodaPe__icones__item"></div>
+          <div class="rodaPe__icones__item"></div>
+          <div class="rodaPe__icones__item"></div>
+          <div class="rodaPe__icones__item"></div>
+        </div>
+      </div>
+      </footer>
+      <script src="/assets/js/principal.js"></script>
+  </body>
 </html>
