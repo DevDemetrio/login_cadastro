@@ -6,15 +6,19 @@
 }
 
 .cadastro__container {
-  width: 17.56rem;
-  height: 20.81rem;
-  margin: 0 auto;
-  border-radius: 1.25rem;
-  background-color: #d9d9d9;
+  margin: 0 auto 0 auto;
+  width: 347px;
+  height: 425px;
+  border-radius: 20px;
+  background: #d9d9d9;
 }
 
 form {
-  padding: 2.937rem 0.687rem 5.937rem 0.687rem;
+  width: 18.75rem;
+  margin: 2.937rem auto 5.937rem auto;
+  padding-top: 3.937rem;
+
+  /*padding: 2.937rem 0.687rem 5.937rem 0.687rem;*/
 }
 
 form div + div {
@@ -30,8 +34,8 @@ form > div > label {
   font-weight: bold;
 }
 form > div > input {
-  width: 16rem;
-  height: 1.75rem;
+  width: 18.25rem;
+  height: 2.125rem;
   padding-left: 10px;
   border-radius: 10px;
   color: #a5a5a1;
