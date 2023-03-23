@@ -2,6 +2,12 @@
   width: 265px;
   margin: 1rem auto 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .trabalhos {
+    width: 265px;
+    margin: 6rem auto 0 auto;
+  }
+}
 .trabalhos > h2 {
   margin-bottom: 1.2rem;
   font-size: 1.2rem;

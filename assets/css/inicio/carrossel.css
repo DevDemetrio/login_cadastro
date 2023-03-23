@@ -14,6 +14,20 @@
   height: 158px;
   background-color: #d9d9d9;
 }
+
+@media screen and (min-width: 768px) {
+  .slider {
+    margin: 4rem auto 0 auto;
+    width: 582px;
+    height: 211px;
+    overflow: hidden;
+  }
+  .item__slide {
+    width: 582px;
+    height: 211px;
+    background-color: #d9d9d9;
+  }
+}
 .item__slide h2 {
   text-align: center;
 }
@@ -44,7 +58,15 @@
   display: flex;
   justify-content: center;
 }
-
+@media screen and (min-width: 768px) {
+  .manual__navigation {
+    position: absolute;
+    width: 582px;
+    margin-top: -270px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .manual__btn {
   border: 2px solid #fff;
   padding: 5px;
@@ -86,6 +108,15 @@
   margin-top: 130px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .navegation__auto {
+    position: absolute;
+    width: 582px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .navegation__auto div:not(:last-child) {
   margin-right: 20px;
