@@ -4,8 +4,13 @@
 }
 @media screen and (min-width: 768px) {
   .trabalhos {
-    width: 265px;
+    width: 600px;
     margin: 6rem auto 0 auto;
+  }
+  .trabalhos__container {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 20px 20px;
   }
 }
 .trabalhos > h2 {
