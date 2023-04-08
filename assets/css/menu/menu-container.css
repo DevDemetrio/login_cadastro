@@ -1,6 +1,8 @@
 .menu__container{
+    max-width: 1200px;
     height: 5.0rem;
-    margin: 0 1rem 0 1rem;
+    margin: 0 auto 0 auto;
+    padding: 0 .9375rem 0 .9375rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

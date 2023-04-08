@@ -6,11 +6,17 @@ let botao = document.querySelector("#botao");
 
 botao.addEventListener("click", function (event) {
   event.preventDefault();
-
+ 
   let cpf = document.querySelector("#cpf");
   let erro = document.querySelector(".cpf__erro");
 
   let array = cpf.value.split("");
+ 
+
+  if( array.length == 0){
+    console.log("Digite alguma coisa");
+    return;
+  }
 
   for (let i = 0; i < 9; i++) {
     somma += parseInt(array[i]) * numerosPrimeiroDigito[i];

@@ -42,25 +42,24 @@
     <section class="cadastro">
       <h1>Cadastro</h1>
       <div class="cadastro__container">
-        <form action="">
+        <form action="" methor="get">
           <div class="cadastro__nome cadastro__campos">
             <label for="nome">Nome</label>
             <input type="text" id="nome" />
           </div>
           <div class="cadastro__email cadastro__campos">
             <label for="email">E-mail</label>
-            <input type="text" id="email">
+            <input type="email" id="email">
           </div>
           <div class="cadastro__cpf cadastro__campos">
             <label for="cpf">CPF <span class="cpf__erro"></span></label>
-            <input type="text" id="cpf">
+            <input type="text" id="cpf" placeholder="000.000.000-00">
           </div>
           <div class="cadastro__botao">
             <button id="botao">Envia</button>
           </div>
-       
-   
         </form>
+
       </div>
     </section>
     <footer class="rodaPe">
