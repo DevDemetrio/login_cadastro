@@ -9,12 +9,14 @@ botao.addEventListener("click", function (event) {
  
   let cpf = document.querySelector("#cpf");
   let erro = document.querySelector(".cpf__erro");
+  let cpfOk = document.querySelector(".cpf__ok");
 
   let array = cpf.value.split("");
  
 
   if( array.length == 0){
-    console.log("Digite alguma coisa");
+    erro.classList.add("cpf__mensagem__erro");
+    erro.textContent = menssageErro(2)
     return;
   }
 
@@ -24,7 +26,7 @@ botao.addEventListener("click", function (event) {
 
   if (encontraDigito(somma % 11) != parseInt(array[9])) {
     erro.classList.add("cpf__mensagem__erro");
-    erro.textContent = "CPF incorreto";
+    erro.textContent = menssageErro(1)
     return;
   }
 
@@ -36,10 +38,25 @@ botao.addEventListener("click", function (event) {
   console.log(somma);
   if (encontraDigito(somma % 11) != parseInt(array[10])) {
     erro.classList.add("cpf__mensagem__erro");
-    erro.textContent = "CPF incorreto";
+    erro.textContent = menssageErro(1)
     return;
   }
+
+  cpfOk.classList.add("cpf__ok");   
+  cpfOk.textContent = "CPF ok" 
+  
 });
+
+
+
+const menssageErro = (error) =>{
+  if(error == 1){
+    return "CPF incorreto";
+  }
+  if(error == 2){
+    return "Informe o CPF";
+  }
+}
 
 function encontraDigito(numero) {
   if (numero < 2) {
