@@ -31,7 +31,7 @@
     grid-template-columns: 285px 285px;
     grid-template-rows: 289.5px 20px 289.5px 20px;
     gap: 15px;
-    margin: 0 auto  0 auto;
+    margin: 0 auto  7.5rem auto;
    
   }
   .trabalho__principal {
@@ -72,6 +72,7 @@
     grid-row-end: 5;
   }
  
+
 }
 .trabalhos > h2 {
   margin-bottom: 1.2rem;

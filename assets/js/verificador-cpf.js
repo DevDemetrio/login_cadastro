@@ -25,8 +25,9 @@ botao.addEventListener("click", function (event) {
   }
 
   if (encontraDigito(somma % 11) != parseInt(array[9])) {
-    erro.classList.add("cpf__mensagem__erro");
+    
     erro.textContent = menssageErro(1)
+    erro.classList.add("cpf__mensagem__erro");
     return;
   }
 
@@ -37,8 +38,9 @@ botao.addEventListener("click", function (event) {
 
   console.log(somma);
   if (encontraDigito(somma % 11) != parseInt(array[10])) {
-    erro.classList.add("cpf__mensagem__erro");
+    
     erro.textContent = menssageErro(1)
+    erro.classList.add("cpf__mensagem__erro");
     return;
   }
 
